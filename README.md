@@ -46,3 +46,11 @@ Analyzing Fair Price sales performance, customer satisfaction, and inventory dis
 ### Customer Ratings
 - **Average rating** holds at (~4.0) across all segments, indicating stable customer satisfaction.
 - **Opportunity:** Introduce targeted feedback loops in Tier 1 or High-size stores to sustain or raise perception further.
+
+## Next Steps & Recommendations
+- **Promotional Focus:** Roll out “Low Fat” cross-category bundles in Tier 1 outlets to capture incremental share.
+- **Category Revitalization:** Test limited-time offers on lagging categories (Seafood, Breakfast) with eye-catching in-store displays.
+- **Outlet Audit:** Conduct operational reviews at Underperforming “High” outlets to uncover merchandising or assortment issues.
+- **Best Practice Sharing:** Document and replicate the product mix and marketing tactics from top-performing Tier 3 and 2018 stores across the network.
+- **A/B Test Layouts:** Pilot new shelf layouts in Medium and High-size outlets to optimize product visibility and basket size.
+By acting on these insights, FairPrice can better align product mix, promotional focus, and store execution to sustain growth and optimize profitability.
