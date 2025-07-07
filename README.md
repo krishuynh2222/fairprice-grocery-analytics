@@ -54,3 +54,16 @@ Analyzing Fair Price sales performance, customer satisfaction, and inventory dis
 - **Best Practice Sharing:** Document and replicate the product mix and marketing tactics from top-performing Tier 3 and 2018 stores across the network.
 - **A/B Test Layouts:** Pilot new shelf layouts in Medium and High-size outlets to optimize product visibility and basket size.
 By acting on these insights, FairPrice can better align product mix, promotional focus, and store execution to sustain growth and optimize profitability.
+
+
+## Contact & Attribution
+📋 Project Origin
+This is a redacted replica of my May 2025 freelance engagement for FairPrice Grocery (Singapore) to run a marketing campaign.
+
+⚠️ Original raw data has been altered to prevent any disclosure of customer or proprietary business information.
+
+👤 Author: Ngan Huynh - Data Analyst (Freelance)
+
+✉️ krishuynh2222@gmail.com
+
+🔗 www.linkedin.com/in/krishuynh2222
