@@ -59,7 +59,7 @@ By acting on these insights, FairPrice can better align product mix, promotional
 ## Contact & Attribution
 📋 Project Origin
 
-👤 Author: Ngan Huynh - Data Analyst (Freelance)
+👤 Author: Ngan Huynh - Data Analyst
 
 ✉️ krishuynh2222@gmail.com
 
