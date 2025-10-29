@@ -2,7 +2,7 @@
 
 **Tools Used:** Excel, MySQL, Tableau
 
-Analyzing Fair Price sales performance, customer satisfaction, and inventory distribution for the marketing campaign in May 2025. An interactive Tableau dashboard can be found [Tableau](https://public.tableau.com/views/FairPriceGroceryDashboard/FairPrice?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+An interactive Tableau dashboard can be found [Tableau](https://public.tableau.com/views/FairPriceGroceryDashboard/FairPrice?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 
 ![Executive Summary](./04_dashboard/FairPrice.png)
