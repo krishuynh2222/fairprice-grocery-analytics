@@ -6,25 +6,24 @@
 -- 1. Total sales by fat content
 SELECT 
   Item_Fat_Content,
-  CAST(SUM(Sales) AS DECIMAL(10,2)) AS total_sales
+  ROUND(CAST(SUM(Sales) / 1000000 AS numeric), 2) AS total_sales
 FROM fair_price_data
 GROUP BY Item_Fat_Content;
 
 -- 2. Total sales by item type (descending order)
 SELECT 
   Item_Type,
-  CAST(SUM(sales) AS DECIMAL(10,2)) AS Total_Sales
+  ROUND(CAST(SUM(Sales) / 1000 AS numeric), 2) AS Total_Sales
 FROM fair_price_data
 GROUP BY Item_Type
-ORDER BY total_sales DESC;
+ORDER BY Total_Sales DESC;
 
 -- 3. Sales comparison by fat content across outlet location types
 WITH sales_by_fat AS (
   SELECT
     Outlet_Location_Type,
     Item_Fat_Content,
-	CAST(SUM(sales) AS DECIMAL(10,2)) AS Total_Sales
-
+    ROUND(CAST(SUM(Sales) / 1000 AS numeric), 2) AS Total_Sales
   FROM fair_price_data
   GROUP BY Outlet_Location_Type, Item_Fat_Content
 )
@@ -40,7 +39,7 @@ ORDER BY Outlet_Location_Type;
 WITH size_totals AS (
   SELECT 
     Outlet_Size,
-    CAST(SUM(sales) AS DECIMAL(10,2)) AS Total_Sales
+    ROUND(CAST(SUM(Sales) / 1000 AS numeric), 2) AS Total_Sales
   FROM fair_price_data
   GROUP BY Outlet_Size
 )
@@ -50,6 +49,18 @@ SELECT
   ROUND(Total_Sales * 100.0 / SUM(Total_Sales) OVER (), 2) AS Sales_Percentage
 FROM size_totals
 ORDER BY Total_Sales DESC;
+
+5. Which outlet types perform best?
+SELECT
+  Outlet_Type,
+  ROUND(CAST(SUM(Sales) / 1000.0 AS numeric), 2) AS total_sales,  
+  COUNT(*) AS num_items,      
+  ROUND(CAST(AVG(Sales) AS numeric), 0) AS avg_sales,       
+  ROUND(CAST(AVG(Rating) AS numeric), 1) AS avg_rating,     
+  ROUND(CAST(SUM(item_Visibility) AS numeric), 0) AS item_visibility 
+FROM fair_price_data
+GROUP BY Outlet_Type
+ORDER BY total_sales DESC;
 
 -- 5. Performance optimization: creating indexes on key columns
 CREATE INDEX idx_fp_outlet_size ON fair_price_data(Outlet_Size);
